@@ -5,7 +5,7 @@
     "description": "Extra QOL-features for clarafile.cfgbonn.de",
     "browser_specific_settings": {
         "gecko": {
-            "id": "clarafile+@mozilla.org",
+            "id": "clarafileplus@mozilla.org",
             "data_collection_permissions": {
                 "required": ["none"]
             }
@@ -18,7 +18,7 @@
     "content_scripts": [
     {
       "matches": ["*://clarafile.cfgbonn.de/*"],
-      "js": ["content.js"]
+      "js": ["logout-btn.js"]
     }
   ]
 }

@@ -11,6 +11,10 @@
             }
         }
     },
+    "icons": {
+        "48": "img/favicon.png",
+        "96": "img/favicon.png"
+    },
     "content_scripts": [
     {
       "matches": ["*://clarafile.cfgbonn.de/*"],

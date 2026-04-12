@@ -1,0 +1,88 @@
+:root{
+    --bg-dark: oklch(0.1 0.005 263);
+    --bg: oklch(0.15 0.005 263);
+    --bg-light: oklch(0.2 0.005 263);
+    --text: oklch(0.96 0.01 263);
+    --text-muted: oklch(0.76 0.01 263);
+    --highlight: oklch(0.5 0.01 263);
+    --border: oklch(0.4 0.01 263);
+    --border-muted: oklch(0.3 0.01 263);
+    --primary: oklch(0.76 0.1 263);
+    --secondary: oklch(0.76 0.1 83);
+    --danger: oklch(0.7 0.05 30);
+    --warning: oklch(0.7 0.05 100);
+    --success: oklch(0.7 0.05 160);
+    --info: oklch(0.7 0.05 260);
+}
+
+*{
+    color: var(--text-muted) !important;
+}
+
+*:not(.nav-link){
+    border-color: var(--border-muted) !important;
+}
+
+body, div.drawerheader, 
+div.drawercontent, 
+div#region-main-box,
+div.login-wrapper,
+div.container-fluid{
+    background-color: var(--bg-dark) !important;
+}
+
+nav.navbar.fixed-top.bg-body,
+#topofscroll,
+div#region-main,
+button.btn,
+ul.pagination,
+div.login-container{
+    background-color: var(--bg) !important;
+}
+
+h1.h2.mb-0, .card-title{
+    color: var(--text) !important;
+}
+
+.block_timeline.block.card.mb-3, 
+block_html.block.card.mb-3, 
+div.timeline-event-list-item, 
+.card-body, 
+div.card-footer, 
+div.d-flex.align-items-start, 
+div.activity-header,
+div.box,
+div.table-responsive,
+table.generaltable{
+    background-color: var(--bg-light) !important;
+}
+
+div.divider{
+    background-color: var(--border) !important;
+}
+
+.nav-link:hover{
+    background-color: var(--bg-light) !important;
+}
+
+.nav-link.active{
+    border-bottom-color: var(--primary) !important;
+}
+
+input.form-control{
+    border-color: var(--border-muted) !important;
+    background-color: transparent !important;
+    color: var(--text-muted) !important;
+}
+
+input.form-control::placeholder{
+    color: var(--text-muted) !important;
+}
+
+div.login-container{
+    box-shadow: 0 0 1rem var(--text-muted) !important;
+}
+
+img#logoimage{
+    content: url("/img/clarafile-logo-dark.jpg") !important;
+}

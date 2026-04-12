@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {   
     const aTags = document.getElementById("carousel-item-main")?.querySelectorAll("a");
-    const logoutHref = aTags[aTags.length - 1]?.href;
+    const logoutHref = aTags != undefined ? aTags[aTags.length - 1].href : undefined;
     const moreMenuUl = document.querySelector('nav.moremenu.navigation > ul.nav.more-nav.navbar-nav');
 
     moreMenuUl?.insertBefore(createNewLiElement(logoutHref), moreMenuUl.firstChild);

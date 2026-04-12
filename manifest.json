@@ -3,22 +3,20 @@
     "name": "ClaraFile+",
     "version": "1.0",
     "description": "Extra QOL-features for clarafile.cfgbonn.de",
+    "icons": {
+        "48": "img/favicon.png"
+    },
+    "homepage_url": "https://github.com/Chrort/clarafilePlus",
     "browser_specific_settings": {
         "gecko": {
-            "id": "clarafileplus@mozilla.org",
-            "data_collection_permissions": {
-                "required": ["none"]
-            }
+            "id": "clarafileplus@mozilla.org"
         }
-    },
-    "icons": {
-        "48": "img/favicon.png",
-        "96": "img/favicon.png"
     },
     "content_scripts": [
     {
       "matches": ["*://clarafile.cfgbonn.de/*"],
-      "js": ["logout-btn.js"]
+      "js": ["logout-btn.js"],
+      "css": ["dark-theme.css"]
     }
   ]
 }

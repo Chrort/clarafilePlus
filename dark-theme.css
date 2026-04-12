@@ -47,7 +47,16 @@ div.bg-white.p-1,
 div.p-sm-2,
 textarea.form-control,
 .tail,
-div.table-responsive{
+div.table-responsive,
+div#filters,
+div.col-md-9.d.flex,
+div#action_bar,
+div.box.py-3.generalbox.info,
+div.popover.footer,
+nav.moremenu,
+ul.nav-tabs,
+ul.nav,
+ul.nav-tabs > li{
     background-color: var(--bg) !important;
 }
 
@@ -62,13 +71,19 @@ div.box,
 div.table-responsive,
 table.generaltable,
 input.form-check-input,
-ul.nav,
 div.container-fluid,
 .navigation,
 div.message,
 div.section-item,
 a.btn-icon,
-th.header{
+th.header,
+div.alert.alert-block,
+ul.dropdown-menu,
+p.alert.alert-info,
+div.filter-group.my-2,
+div.filter-group.my-2 div.border-radius.my-2,
+select.form-select > option,
+div.primary-navigation > nav > ul{
     background-color: var(--bg-light) !important;
 }
 
@@ -89,7 +104,8 @@ strong.m-0.text-truncate,
 h3.popover-region-header-text,
 h6.day,
 h4,
-h5{
+h5,
+a.d-inline-block.aabtn{
     color: var(--text) !important;
 }
 
@@ -102,7 +118,8 @@ div.divider{
 }
 
 input.form-control,
-select.form-select{
+select.form-select,
+input#checkall{
     border-color: var(--border-muted) !important;
     background-color: transparent !important;
     color: var(--text-muted) !important;
@@ -140,4 +157,21 @@ textarea.form-control::placeholder{
 
 div.table-responsive{
     background-color: var(--bg) !important;
+}
+
+div#filters{
+    background: none !important;
+}
+
+div.filter-group.my-2,
+div.filter-group.my-2 div.border-radius.my-2{
+    border-color: var(--border) !important;
+}
+
+div.table-responsive tbody:nth-child(even){
+    background-color: var(--bg) !important;
+}
+
+div.table-responsive tbody:nth-child(od){
+    background-color: var(--bg-light) !important;
 }

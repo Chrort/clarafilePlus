@@ -15,7 +15,7 @@
     "content_scripts": [
     {
       "matches": ["*://clarafile.cfgbonn.de/*"],
-      "js": ["logout-btn.js"],
+      "js": ["logout-btn.js", "dark-theme.js"],
       "css": ["dark-theme.css"]
     }
   ]

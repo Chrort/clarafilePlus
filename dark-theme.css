@@ -2,6 +2,7 @@
     --bg-dark: oklch(0.1 0.005 263);
     --bg: oklch(0.15 0.005 263);
     --bg-light: oklch(0.2 0.005 263);
+    --bg-very-light: oklch(0.25 0.005 263);
     --text: oklch(0.96 0.01 263);
     --text-muted: oklch(0.76 0.01 263);
     --highlight: oklch(0.5 0.01 263);
@@ -27,7 +28,7 @@ body, div.drawerheader,
 div.drawercontent, 
 div#region-main-box,
 div.login-wrapper,
-div.container-fluid{
+div.message-app{
     background-color: var(--bg-dark) !important;
 }
 
@@ -36,12 +37,18 @@ nav.navbar.fixed-top.bg-body,
 div#region-main,
 button.btn,
 ul.pagination,
-div.login-container{
+div.login-container,
+div.dropdown-menu,
+a.py-0,
+div.section.border-0,
+div.popover-region-container,
+div.popover-region-footer-container,
+div.bg-white.p-1,
+div.p-sm-2,
+textarea.form-control,
+.tail,
+div.table-responsive{
     background-color: var(--bg) !important;
-}
-
-h1.h2.mb-0, .card-title{
-    color: var(--text) !important;
 }
 
 .block_timeline.block.card.mb-3, 
@@ -53,23 +60,49 @@ div.d-flex.align-items-start,
 div.activity-header,
 div.box,
 div.table-responsive,
-table.generaltable{
+table.generaltable,
+input.form-check-input,
+ul.nav,
+div.container-fluid,
+.navigation,
+div.message,
+div.section-item,
+a.btn-icon,
+th.header{
     background-color: var(--bg-light) !important;
+}
+
+.nav-link:hover,
+li.page-item,
+.page-link{
+    background-color: var(--bg-very-light) !important;
+}
+
+.icon-no-margin{
+    background-color: transparent !important;
+}
+
+h1.h2.mb-0,
+.card-title,
+a.nav-link,
+strong.m-0.text-truncate,
+h3.popover-region-header-text,
+h6.day,
+h4,
+h5{
+    color: var(--text) !important;
 }
 
 div.divider{
     background-color: var(--border) !important;
 }
 
-.nav-link:hover{
-    background-color: var(--bg-light) !important;
-}
-
 .nav-link.active{
     border-bottom-color: var(--primary) !important;
 }
 
-input.form-control{
+input.form-control,
+select.form-select{
     border-color: var(--border-muted) !important;
     background-color: transparent !important;
     color: var(--text-muted) !important;
@@ -83,6 +116,28 @@ div.login-container{
     box-shadow: 0 0 1rem var(--text-muted) !important;
 }
 
-img#logoimage{
-    content: url("/img/clarafile-logo-dark.jpg") !important;
+div#page{
+    background-image: none !important;
+}
+
+a#user-menu-toggle{
+    border: none !important;
+}
+
+div.alert-danger{
+    background-color: var(--info) !important;
+    color: var(--text) !important;
+}
+
+textarea.form-control{
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+}
+
+textarea.form-control::placeholder{
+    color: var(--text) !important;
+}
+
+div.table-responsive{
+    background-color: var(--bg) !important;
 }

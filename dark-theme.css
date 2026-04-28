@@ -14,13 +14,16 @@
     --warning: oklch(0.7 0.05 100);
     --success: oklch(0.7 0.05 160);
     --info: oklch(0.7 0.05 260);
+    --bs-body-bg: oklch(0.15 0.005 263) !important;
+    --bs-primary-rgb: oklch(0.76 0.1 263) !important;
+    --bs-primary: oklch(0.76 0.1 263) !important;
 }
 
 *{
     color: var(--text-muted) !important;
 }
 
-*:not(.nav-link){
+*:not(.nav-link, .tail){
     border-color: var(--border-muted) !important;
 }
 
@@ -28,7 +31,8 @@ body, div.drawerheader,
 div.drawercontent, 
 div#region-main-box,
 div.login-wrapper,
-div.message-app{
+div.message-app,
+#page{
     background-color: var(--bg-dark) !important;
 }
 
@@ -45,8 +49,7 @@ div.popover-region-container,
 div.popover-region-footer-container,
 div.bg-white.p-1,
 div.p-sm-2,
-textarea.form-control,
-.tail,
+textarea.form-control
 div.table-responsive,
 div#filters,
 div.col-md-9.d.flex,
@@ -56,22 +59,31 @@ div.popover.footer,
 nav.moremenu,
 ul.nav-tabs,
 ul.nav,
-ul.nav-tabs > li{
+ul.nav-tabs > li,
+div.content-item-container.notification,
+div.timeline-event-list-item,
+section.block_timeline.block,
+div.card-text.content,
+div.recentylaccessedcourses > div.container-fluid,
+div.w-100.text-truncate,
+div.card-footer.menu,
+div.card-footer.border-0, 
+div.d-flex.align-items-start,
+#pdftoolbar,
+#comment-wrapper,
+#currentPage,
+select.scale,
+#pdfannotator_cursor{
     background-color: var(--bg) !important;
 }
 
-.block_timeline.block.card.mb-3, 
 block_html.block.card.mb-3, 
-div.timeline-event-list-item, 
-.card-body, 
-div.card-footer, 
-div.d-flex.align-items-start, 
 div.activity-header,
-div.box,
+div.box:not(.submissionsummarytable, #notice),
 div.table-responsive,
 table.generaltable,
 input.form-check-input,
-div.container-fluid,
+nav > div.container-fluid,
 .navigation,
 div.message,
 div.section-item,
@@ -83,13 +95,20 @@ p.alert.alert-info,
 div.filter-group.my-2,
 div.filter-group.my-2 div.border-radius.my-2,
 select.form-select > option,
-div.primary-navigation > nav > ul{
+div.primary-navigation > nav > ul,
+a.btn.btn-link.block-add,
+a.list-group-item.list-group-item-action:hover,
+.clickable:hover,
+div.content-item-container.notification.unread,
+div.content-item-container.notification:hover,
+.bg-light{
     background-color: var(--bg-light) !important;
 }
 
 .nav-link:hover,
 li.page-item,
-.page-link{
+.page-link,
+div.content-item-container.notification.unread:hover{
     background-color: var(--bg-very-light) !important;
 }
 
@@ -105,12 +124,19 @@ h3.popover-region-header-text,
 h6.day,
 h4,
 h5,
-a.d-inline-block.aabtn{
+a.d-inline-block.aabtn,
+div.notification-message,
+p.text-muted,
+.maincalendar .calendarmonth td.today{
     color: var(--text) !important;
 }
 
 div.divider{
     background-color: var(--border) !important;
+}
+
+.maincalendar .calendarmonth td.today .day-number-circle{
+    background-color: var(--primary) !important;
 }
 
 .nav-link.active{
@@ -119,7 +145,8 @@ div.divider{
 
 input.form-control,
 select.form-select,
-input#checkall{
+input#checkall,
+.nav-tabs .nav-link.active{
     border-color: var(--border-muted) !important;
     background-color: transparent !important;
     color: var(--text-muted) !important;
@@ -146,6 +173,11 @@ div.alert-danger{
     color: var(--text) !important;
 }
 
+.border,
+.border-bottom{
+    border: 1px solid var(--border) !important;
+}
+
 textarea.form-control{
     border-color: var(--border) !important;
     color: var(--text) !important;
@@ -164,7 +196,9 @@ div#filters{
 }
 
 div.filter-group.my-2,
-div.filter-group.my-2 div.border-radius.my-2{
+div.filter-group.my-2 div.border-radius.my-2,
+div.pb-3.px-2.border-bottom,
+div.pt-2.border-bottom{
     border-color: var(--border) !important;
 }
 
@@ -174,4 +208,31 @@ div.table-responsive tbody:nth-child(even){
 
 div.table-responsive tbody:nth-child(od){
     background-color: var(--bg-light) !important;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem var(--primary) !important;
+}
+
+span.bg-danger,
+.alert .alert-danger{
+    background-color: var(--danger) !important;
+}
+
+#mod_book-chapter{
+    background-color: var(--bg) !important;
+}
+
+.path-mod-pdfannotator{
+    --page-border: none !important;
+}
+
+#pdftoolbar{
+    -webkit-box-shadow: inset 0 1px 1px 0 var(--border) !important;
+    -moz-box-shadow: inset 0 1px 1px 0 var(--border) !important;
+    box-shadow: inset 0 1px 1px 0 var(--border) !important;
+}
+
+.tail.position-absolute{
+    border-bottom-color: var(--bg-light) !important;
 }
